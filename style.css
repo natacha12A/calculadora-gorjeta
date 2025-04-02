@@ -31,10 +31,12 @@ header{
 main{
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
 }
 
 .conta,
-.gorjeta{
+.gorjeta,
+.pessoas{
     margin-bottom: 2rem;
 }
 
@@ -70,15 +72,13 @@ main{
 
 .conta input::placeholder,
 .pessoas input::placeholder{
-    color: var(--green-300);
+    color: var(--green-400);
 }
 
 .conta:has(input:focus) div,
 .pessoas:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
-
-
 
 .gorjeta div{
     margin-top: 1rem;
@@ -107,9 +107,41 @@ main{
 }
 
 .gorjeta #outra::placeholder{
-    color: var(--green-300);
+    color: var(--green-400);
 }
 
 .pessoas #erro{
     display: none;
+}
+
+.resultados{
+    background-color: var(--green-800);
+    border-radius: 0.9375rem;
+    padding: 1.5rem;
+}
+
+.resultados div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultados p{
+    color: var(--green-400);
+    font-size: 0.8125rem;
+}
+
+.resultados p strong{
+    color: var(--white);
+    font-size: 1rem;
+
+}
+
+resultados div > strong{
+    color: var(--light-green);
+    font: 2rem;
+}
+
+.resultados .gorjeta-total {
+    margin-bottom: 1.25rem;
 }
