@@ -83,3 +83,6 @@ function limpar(){
     document.querySelector(".total > strong").innerHTML = "$0.00"
 
 }
+conta = 0
+pessoas = 0
+porcentagem = 0
